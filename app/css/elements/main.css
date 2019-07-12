@@ -1,5 +1,7 @@
 main {
   min-height: 100vh;
+  display: grid;
+  align-content: space-between;
 
   & > .currencies {
     flex: 2;
