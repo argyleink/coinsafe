@@ -6,7 +6,7 @@ aside {
   background-color: white;
 
   @media (max-width:720px) {
-    box-shadow: 5px 0 150px hsla(0,0%,0%,90%);
+    box-shadow: 5px 0 40px hsla(0, 0%, 0%, 0.75);
     position: fixed;
     bottom: 0;
     top: 0;
