@@ -1,0 +1,72 @@
+@import '../settings/colors.css';
+@import '../generic/animations.css';
+@import '../settings/easings.css';
+
+.currency-list {
+  & > .currency-list-item:not(:last-child) {
+    margin-bottom: 4px;
+    &:after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      height: 2px;
+      width: calc(100% - 2rem);
+      background-color: var(--brand-grey_light);
+    }
+  }
+}
+
+.currency-list-item {
+  padding: 0 1rem;
+  position: relative;
+  height: 60px;
+
+  opacity: 0;
+  transform: translateX(-1rem);
+  animation: present-myself 0.5s var(--easing-deceleration) forwards;
+
+  &:nth-child(2) { animation-delay: 0.1s; }
+  &:nth-child(3) { animation-delay: 0.2s; }
+  &:nth-child(4) { animation-delay: 0.3s; }
+  &:nth-child(5) { animation-delay: 0.4s; }
+
+  &:hover {
+    background-color: var(--brand-grey_light);
+
+    & > svg {
+      fill: var(--brand-blue);
+    }
+  }
+
+  & > svg {
+    fill: var(--grey);
+  }
+
+  & p {
+    margin: 0;
+  }
+
+  & > p, 
+  & > .tally:nth-child(2) {
+    flex: 2;
+    margin-left: 1.5rem;
+    color: var(--dark-grey);
+    text-align: left;
+  }
+
+  & > .tally {
+    text-align: right;
+
+    & > p {
+      &:first-child {
+        font-size: 0.9rem;
+      }
+
+      &:nth-child(2) {
+        color: var(--grey);
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+@import '../settings/colors.css';
+@import '../generic/animations.css';
+@import '../settings/easings.css';
+
+aside {
+  background-color: white;
+
+  @media (max-width:720px) {
+    box-shadow: 5px 0 150px hsla(0,0%,0%,90%);
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+    width: 90vw;
+    box-sizing: border-box;
+    transform: translateX(-110vw);
+    transition: transform 0.4s var(--easing-deceleration);
+    will-change: transform;
+  }
+
+  &[in] {
+    transform: translateX(0);
+  }
+
+  & > .backdrop {
+    content: "";
+    width: 10vw !important;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -10vw;
+    z-index: 10;
+    background-color: hsla(0,0%,0%,0%);
+  }
+
+  & > .user {
+    padding: 1rem;
+    border-bottom: 1px solid var(--brand-grey_light);
+  }
+
+  & > section {
+    padding: 1rem 0;
+    position: relative;
+
+    &:after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      right: 0;
+      height: 2px;
+      width: 85%;
+      background-color: var(--brand-grey_light);
+    }
+
+    & > a {
+      padding: 0.75rem 1.5rem;
+
+      & > svg {
+        margin-right: 1rem;
+      }
+    }
+
+    &:last-of-type {
+      flex: 2;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  & > footer {
+    border-top: 2px solid var(--brand-grey_light);
+    height: 3rem;
+    font-size: 0.8rem;
+
+    & > span {
+      margin: 0 0.5rem;
+    }
+  }
+}

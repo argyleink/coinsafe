@@ -1,0 +1,8 @@
+@import '../settings/colors.css';
+
+.hidden   { display: none; }
+.positive { color: var(--brand-green); }
+.negative { color: var(--brand-red); }
+.google-sans {
+  font-family: 'Google Sans', system-ui;
+}

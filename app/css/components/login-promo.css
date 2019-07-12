@@ -1,0 +1,13 @@
+.login-promo {
+  flex: 2;
+  align-content: center;
+
+  & > figure {
+    max-width: 10rem;
+  }
+
+  & > h1 {
+    text-align: center;
+    margin: 0;
+  }
+}

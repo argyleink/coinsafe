@@ -1,0 +1,16 @@
+{
+  "name": "Coinsafe",
+  "short_name": "Coinsafe",
+  "theme_color": "#111111",
+  "background_color": "#111111",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "/index.html",
+  "icons": [
+    {
+      "src": "/assets/droid-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

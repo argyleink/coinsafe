@@ -1,0 +1,15 @@
+@import '../settings/colors.css';
+
+body, html {
+  margin: 0;
+  background: white;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+
+  @media(min-width:720px) {
+    grid-gap: 2rem;
+  }
+}

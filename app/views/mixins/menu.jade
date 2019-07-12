@@ -1,0 +1,31 @@
+mixin menu()
+  aside(grid='rows' vertically-distributed='equal')
+    .backdrop
+    .user(grid vertically-aligned='center')
+      figure.avatar: img(src='/assets/avatar.gif')
+      .details(grid='rows' vertically-distributed='around')
+        p.user-name Rambo Gestalt
+        p.user-email(grid vertically-aligned='center')
+          | rambo@google.com
+          include ../svg/chevron
+
+    section
+      a(grid vertically-aligned='center')
+        include ../svg/bank
+        | Bank Accounts
+      a(grid vertically-aligned='center')
+        include ../svg/settings
+        | Settings
+
+    section
+      a(grid vertically-aligned='center')
+        include ../svg/feedback
+        | Send Feedback
+      a(grid vertically-aligned='center')
+        include ../svg/help
+        | Help
+
+    footer(grid horizontally-aligned='center' vertically-aligned='center')
+      a Privacy Policy
+      span • 
+      a Terms of Service

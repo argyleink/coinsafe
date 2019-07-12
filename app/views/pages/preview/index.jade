@@ -1,0 +1,35 @@
+extends ../../layouts/page
+
+append config
+  - var pageTitle = 'Review Trade'
+
+block content
+  main(grid='rows' vertically-distributed='equal' horizontally-distributed='space-between')
+    +primary-nav(true, 'Review Trade')
+    
+    section.trade-preview
+      .line-item.purchase(grid vertically-aligned='center' horizontally-distributed='between')
+        p Purchasing
+        p 1 ETH
+      .line-item(grid vertically-aligned='center' horizontally-distributed='between')
+        p ETH Price
+        p $610.28 USD
+      .line-item(grid vertically-aligned='center' horizontally-distributed='between')
+        p Trade Speed
+        p Instant
+      .line-item(grid vertically-aligned='center' horizontally-distributed='between')
+        p Pay With
+        p.google-sans google_g Pay
+      .line-item(grid vertically-aligned='center' horizontally-distributed='between')
+        p Wallet Fee
+        p $4.00
+      .line-item(grid vertically-aligned='center' horizontally-distributed='between')
+        p Payment Method Fee
+        p $0
+      .line-item.total(grid vertically-aligned='center' horizontally-distributed='between')
+        p Total
+        p $614.28
+
+    section.action
+      a(href='/home/' rel='preload')
+        button(primary block) Buy

@@ -1,0 +1,29 @@
+@import '../settings/colors.css';
+
+input[type='range'] {
+  appearance: none;
+  outline: none;
+  padding: none;
+  width: 90%;
+  height: 0.5rem;
+  border-radius: 1rem;
+  background: var(--brand-grey_light);
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background: var(--brand-grey);
+  }
+
+  &:active::-webkit-slider-thumb {
+    background: var(--brand-blue);
+  }
+
+  &:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 3px white,
+                0 0 0 6px var(--brand-blue);
+  }
+}

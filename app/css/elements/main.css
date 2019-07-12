@@ -1,0 +1,15 @@
+main {
+  min-height: 100vh;
+
+  & > .currencies {
+    flex: 2;
+  }
+
+  &.full {
+    grid-column: span 2;
+  }
+
+  @media(max-width:720px) {
+    grid-column: span 2;
+  }
+}

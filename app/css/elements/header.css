@@ -1,0 +1,5 @@
+@import '../settings/colors.css';
+
+header {
+  min-height: 100vh;
+}

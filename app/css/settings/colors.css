@@ -1,0 +1,30 @@
+:root {
+  --darkest-grey:             hsl(0,0%,2%);
+  --darker-grey:              hsl(0,0%,5%);
+  --dark-grey:                hsl(0,0%,20%);
+  --grey:                     hsl(0,0%,50%);
+  --light-grey:               hsl(0,0%,60%);
+  --lighter-grey:             hsl(0,0%,80%);
+  --lightest-grey:            hsl(0,0%,92%);
+
+  --brand-blue:               hsl(217 89% 61%);
+  --brand-blue_subdued:       color(hsl(217 89% 61%) lightness(97%));
+  --brand-blue_darker:        hsl(214 82% 51%);
+  --brand-yellow:             hsl(45 97% 50%);
+  --brand-red:                hsl(5 81% 56%);
+  --brand-green:              hsl(136 53% 43%);
+  --brand-orange:             hsl(26 96% 54%);
+  --brand-purple:             hsl(272 89% 61%);
+  --brand-pink:               hsl(327 90% 59%);
+  --brand-cyan:               hsl(190 75% 51%);
+
+  --brand-grey:               hsl(206 6% 25%);
+  --brand-grey_light:         hsl(206 6% 95%);
+  --brand-grey_light-hover:   hsl(206 6% 90%);
+  --brand-grey_dark:          hsl(225 6% 13%);
+
+  --text-color_headline:      var(--brand-grey_dark);
+  --text-color_body:          hsl(206 6% 25%);
+  --text-color_supporting:    hsl(213 5% 39%);
+  --text-color_hint:          hsl(207 5% 52%);
+}

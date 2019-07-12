@@ -1,0 +1,33 @@
+extends ../../layouts/page
+
+block content
+  +menu()
+
+  main(grid='rows' vertically-distributed='equal' horizontally-distributed='space-between')
+    +primary-nav()
+
+    section.balance(grid='rows' vertically-aligned='center' horizontally-aligned='center')
+      h2 Balance
+      h3#account-balance $0
+      small#diff.positive $36.87
+
+    section.currencies
+      h4 Your Currencies
+      .currency-list
+        a.currency-list-item(grid vertically-aligned='center')
+          include ../../svg/bitcoin
+          p Bitcoin
+          .tally
+            p#bitcoin $8,332.61
+            p 0.250 BTC
+
+        a.currency-list-item(href='/ethereum/' rel='preload' grid vertically-aligned='center')
+          include ../../svg/ethereum
+          p Ethereum
+          .tally
+            p#ethereum $3,977.96
+            p 4.5306 ETH
+
+    section.actions
+      button(primary block) Send
+      button(primary block) Request

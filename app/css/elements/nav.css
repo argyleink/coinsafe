@@ -1,0 +1,36 @@
+@import '../settings/colors.css';
+@import '../generic/animations.css';
+@import '../settings/easings.css';
+
+nav {
+  height: 64px;
+  padding: 0 1rem;
+  
+  & > h1 {
+    flex: 2;
+    text-align: center;
+    color: var(--grey);
+    font-size: 1.25rem;
+    margin: 0;
+
+    &.text-left {
+      text-align: left;
+      color: var(--dark-grey);
+    }
+  }
+
+  & > :not(h1) {
+    width: 3rem;
+  }
+
+  & > h1.text-left,
+  & > .back-btn {
+    opacity: 0;
+    transform: translateX(1rem);
+    animation: present-myself 0.5s var(--easing-deceleration) forwards;
+  }
+
+  & > h1.text-left {
+    animation-delay: 80ms;
+  }
+}

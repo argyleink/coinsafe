@@ -1,0 +1,12 @@
+@import '../settings/colors.css';
+
+section {
+  & > h4 {
+    padding: 0 1rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: var(--grey);
+    text-transform: uppercase;
+  }
+}

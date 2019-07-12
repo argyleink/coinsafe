@@ -1,0 +1,39 @@
+@import '../settings/colors.css';
+
+.balance {
+  height: 40vh;
+  text-align: center;
+
+  & > h2 {
+    font-size: 0.9rem;
+    color: var(--grey);
+    margin: 0;
+  }
+
+  & > h3, & #coin {
+    font-size: 6vmax;
+    color: var(--brand-grey_dark);
+    margin: 1rem 0;
+  }
+
+  & #coin {
+    width: 50vw;
+    text-align: center;
+    caret-color: var(--brand-blue);
+    outline: none;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & > small {
+    &.positive:before {
+      content: "+"
+    }
+    &.negative:before {
+      content: "-"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+extends ../layouts/page
+
+block content
+  main.full(grid='rows' vertically-distributed='equal' horizontally-distributed='space-between')
+    nav(grid vertically-aligned='center')
+      h1 Coinsafe
+
+    section.login-promo(grid="rows" vertically-aligned='center' horizontally-aligned='center')
+      figure: img(src='/assets/icon.png')
+      h1 Buy, sell & stash cryptocurrencies
+
+    section.auth
+      .user(grid vertically-aligned='center')
+        figure.avatar: img(src='/assets/avatar.gif')
+        .details(grid='rows' vertically-distributed='around')
+          p.user-name Rambo Gestalt
+          p.user-email(grid vertically-aligned='center')
+            | rambo@google.com
+            include ../svg/chevron
+
+      a(href='/home/' rel='preload'): button(primary block) Continue as Rambo

@@ -1,0 +1,27 @@
+include ../mixins/link
+include ../mixins/og-meta
+include ../mixins/twitter-meta
+include ../mixins/primary-nav
+include ../mixins/menu
+
+block config
+  - var pageTitle = 'Coinsafe'
+
+doctype html
+html
+  include ../partials/head
+
+  block title
+    title= pageTitle
+
+  link(rel='preload' href='/common.bundle.css' as='style')
+  link(rel='preload' href='/common.bundle.js' as='script')
+
+  link(rel='stylesheet' href='/common.bundle.css')
+  //- link(rel='stylesheet' href='index.css')
+
+  body
+    block content
+
+    script(src='/common.bundle.js' defer)
+    script(src='index.js' defer)

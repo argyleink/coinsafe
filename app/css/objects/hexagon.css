@@ -1,0 +1,23 @@
+.hexagon-logo {
+  max-width: 300px;
+  fill: none;
+  stroke: blue;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-width: 10px;
+  
+  & > polygon {
+    stroke-dasharray: 150;
+    stroke-dashoffset: 1000;
+    transition: stroke-dasharray 0.3s ease;
+    animation: animate-stroke 3s ease forwards;
+  }
+
+  &:hover > polygon {
+    stroke-dasharray: 180;
+  }
+}
+
+@keyframes animate-stroke {
+  to { stroke-dashoffset: 0; }
+}

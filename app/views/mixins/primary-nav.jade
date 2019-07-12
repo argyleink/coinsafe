@@ -1,0 +1,13 @@
+mixin primary-nav(show_back, title)
+  nav(grid vertically-aligned='center')
+    if show_back
+      a.back-btn(onclick='window.history.back()' rel='preload' grid vertically-aligned='center')
+        include ../svg/back
+      h1.text-left= title
+    else
+      span(grid vertically-aligned='center')
+        include ../svg/menu
+      h1 Coinsafe
+    unless show_back
+      figure.avatar
+        img(src='/assets/avatar.gif')

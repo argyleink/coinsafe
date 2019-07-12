@@ -1,0 +1,64 @@
+@import '../settings/colors.css';
+
+button {
+  display: inline-flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 0 1.25rem;
+  height: 2.75rem;
+  overflow: hidden;
+  position: relative;
+
+  border-radius: 0.3rem;
+  border: 1px solid var(--brand-grey_light);
+
+  font-smoothing: antialiased;
+  font-size: .875rem;
+  line-height: 1;
+
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background-color: var(--brand-blue_subdued);
+  }
+
+  &:active {
+    top: 1px;
+  }
+
+  &[block] {
+    width: 100%;
+  }
+
+  &[primary] {
+    background-color: var(--brand-blue);
+    color: var(--brand-blue_subdued);
+    border-color: var(--brand-blue);
+  }
+
+  &[hairline] {
+    color: var(--brand-blue_darker);
+    border-color: var(--brand-grey_light);
+
+    &:hover {
+      border-color: var(--brand-blue_subdued);
+    }
+  }
+
+  &[protected] {
+    color: var(--brand-blue_darker);
+    border-color: transparent;
+    box-shadow: 
+      0 2px 1px -1px hsla(0, 0%, 0%, 20%), 
+      0 1px 1px 0 hsla(0, 0%, 0%, 14%), 
+      0 1px 3px 0 hsla(0, 0%, 0%, 12%);
+  }
+
+  &[ghost] {
+    color: var(--brand-blue_darker);
+    border-color: transparent;
+  }
+}

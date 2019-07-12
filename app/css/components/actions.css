@@ -1,0 +1,12 @@
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.action {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+}

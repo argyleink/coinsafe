@@ -1,0 +1,52 @@
+@import '../settings/colors.css';
+@import '../generic/animations.css';
+@import '../settings/easings.css';
+
+.trade-preview {
+  margin: 2rem 2rem;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 1rem 4rem hsl(0,0%,80%);
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  opacity: 0;
+  transform: translateY(1rem);
+  animation: present-myself 0.5s var(--easing-deceleration) forwards;
+
+  & > .line-item {
+    height: 3rem;
+
+    &:not(:first-child,:last-child) {
+      padding-left: 1rem;
+    }
+
+    & > p {
+      margin: 0;
+
+      &:first-child {
+        font-size: 0.8rem;
+      }
+
+      &:last-child {
+        color: var(--brand-blue);
+      }
+    }
+
+    &.purchase,
+    &.total {
+      & > p {
+        font-weight: bold;
+        font-size: 1rem;
+      }
+    }
+
+    &.purchase {
+      border-bottom: 2px solid var(--brand-grey_light);
+    }
+
+    &.total {
+      border-top: 2px solid var(--brand-grey_light);
+    }
+  }
+}

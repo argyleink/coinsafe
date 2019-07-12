@@ -1,0 +1,35 @@
+@import '../settings/colors.css';
+
+.auth {
+  padding: 1rem;
+  border-top: 2px solid var(--brand-grey_light);
+
+  & .user {
+    margin-bottom: 1rem;
+  }
+
+  & .details {
+    height: 3rem;
+    margin-left: 1rem;
+  }
+}
+
+.user-name, .user-email {
+  margin: 0;
+  line-height: 1.1;
+}
+
+.user-name {
+  color: var(--dark-grey);
+  font-size: 1rem;
+}
+
+.user-email {
+  color: var(--grey);
+  font-size: 0.9rem;
+
+  & > svg {
+    height: 1.25rem;
+    fill: var(--grey);
+  }
+}

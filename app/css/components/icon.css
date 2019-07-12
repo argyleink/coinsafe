@@ -1,0 +1,20 @@
+@import '../settings/colors.css';
+
+.icon {
+  width: 1.75rem;
+  height: 1.75rem;
+
+  fill: var(--dark-grey);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &:matches(:hover, :active) {
+    fill: var(--brand-blue);
+  }
+
+  &.circle {
+    border-radius: 50%;
+  }
+}
