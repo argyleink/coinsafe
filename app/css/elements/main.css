@@ -1,11 +1,8 @@
 main {
   min-height: 100vh;
   display: grid;
+  grid-auto-rows: auto;
   align-content: space-between;
-
-  & > .currencies {
-    flex: 2;
-  }
 
   &.full {
     grid-column: span 2;

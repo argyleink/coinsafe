@@ -61,6 +61,7 @@
     & > p {
       &:first-child {
         font-size: 0.9rem;
+        font-variant-numeric: tabular-nums;
       }
 
       &:nth-child(2) {

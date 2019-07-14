@@ -13,6 +13,7 @@ import 'CSS/components/icon.css'
 import 'CSS/components/balance.css'
 import 'CSS/components/actions.css'
 import 'CSS/components/currency-list.css'
+import 'CSS/trumps/ios.css'
 
 import { $ } from 'blingblingjs'
 import CountUp from 'countup'

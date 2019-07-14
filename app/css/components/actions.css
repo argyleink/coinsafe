@@ -1,3 +1,10 @@
+.actions, .action {
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+  background-color: white;
+}
+
 .actions {
   display: grid;
   grid-template-columns: 1fr 1fr;

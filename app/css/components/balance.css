@@ -3,6 +3,7 @@
 .balance {
   height: 40vh;
   text-align: center;
+  font-variant-numeric: tabular-nums;
 
   & > h2 {
     font-size: 0.9rem;

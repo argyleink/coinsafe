@@ -3,6 +3,10 @@
 @import '../settings/easings.css';
 
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: white;
   height: 64px;
   padding: 0 1rem;
   
