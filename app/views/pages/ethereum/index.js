@@ -17,6 +17,7 @@ import 'CSS/trumps/ios.css'
 
 import { $ } from 'blingblingjs'
 import CountUp from 'countup'
+import '../../../js/ios.js'
 
 // new CountUp('account-balance', 0, 4.5306, 4, 1.5, {
 //   useEasing:   true, 

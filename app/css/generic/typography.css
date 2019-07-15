@@ -1,13 +1,13 @@
 @import '../settings/colors.css';
 
 body, p {
-  font-family: 'Roboto', system-ui;
+  font-family: system-ui;
   line-height: 1.75;
   color: var(--text-color_body);
 }
 
 h1, h2, h3, h4, h5, h6 { 
-  font-family: 'Google Sans', system-ui;
+  font-family: system-ui;
   font-weight: 400;
   color: var(--text-color_headline);
   margin-top: 0;

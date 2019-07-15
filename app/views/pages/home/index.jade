@@ -20,8 +20,8 @@ block content
           .tally
             p#bitcoin $8,332.61
             p 0.250 BTC
-
-        a.currency-list-item(href='/ethereum/' rel='preload' grid vertically-aligned='center')
+        // onclick="window.location.href = this.href; return false;" 
+        a.currency-list-item(href='/ethereum/' grid vertically-aligned='center')
           include ../../svg/ethereum
           p Ethereum
           .tally

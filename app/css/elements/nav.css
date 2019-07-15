@@ -27,14 +27,9 @@ nav {
     width: 3rem;
   }
 
-  & > h1.text-left,
-  & > .back-btn {
+  & > h1.text-left {
     opacity: 0;
     transform: translateX(1rem);
     animation: present-myself 0.5s var(--easing-deceleration) forwards;
-  }
-
-  & > h1.text-left {
-    animation-delay: 80ms;
   }
 }
