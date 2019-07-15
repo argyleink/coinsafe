@@ -5,7 +5,7 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait",
-  "start_url": "/home/",
+  "start_url": "/index.html",
   "icons": [
     {
       "src": "/assets/droid-512x512.png",
