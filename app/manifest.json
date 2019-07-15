@@ -1,7 +1,7 @@
 {
   "name": "Coinsafe",
   "short_name": "Coinsafe",
-  "theme_color": "#4387f4",
+  "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait",
