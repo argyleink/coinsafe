@@ -95,6 +95,10 @@ module.exports = {
       from: `${PATHS.src}/manifest.json`,
       to:   './'
     }]),
+    new CopyWebpackPlugin([{ 
+      from: `${PATHS.src}/js/sw.js`,
+      to:   './'
+    }]),
   ],
   devServer: { 
     contentBase: PATHS.output,

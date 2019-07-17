@@ -17,6 +17,7 @@ import 'CSS/trumps/ios.css'
 
 import { $ } from 'blingblingjs'
 import CountUp from 'countup'
+import 'JS/sw-loader'
 
 let old_balance = 10360.87
 const account_balance = new CountUp('account-balance', 0, old_balance, 2, 1.5, {
